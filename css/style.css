@@ -276,6 +276,25 @@ body {
   transform: scale(0.95);
 }
 
+.adventure-card {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s all;
+}
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.adventure-card_icon {
+  display: inline-block;
+  font-size: 6rem;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .row {
   max-width: 144rem;
   margin: 0 auto;
@@ -322,4 +341,14 @@ body {
 
 .section-about {
   padding-top: 8rem;
+  padding-bottom: 14rem;
+}
+
+.section-advantages {
+  padding: 21rem 0;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-advantages-Background.jpg) center/cover no-repeat;
+  transform: skewY(7deg);
+}
+.section-advantages > * {
+  transform: skewY(-7deg);
 }/*# sourceMappingURL=style.css.map */

@@ -1,2 +1,12 @@
 .section-about
     padding-top: 8rem
+    padding-bottom: 14rem
+
+.section-advantages
+    padding: 21rem 0
+    background: linear-gradient(90.05deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/section-advantages-Background.jpg) center / cover no-repeat
+    // clip-path: polygon(0 10%, 100% 24%, 100% 99%, 0 89%) Ниже запишем аналог тогоже самого
+    transform: skewY(7deg)
+    // Для всех потомков категории section-advantages применить следующие правила
+    & > *
+        transform: skewY(-7deg)
