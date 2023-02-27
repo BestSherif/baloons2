@@ -1,0 +1,32 @@
+.composition
+    position: relative
+    &__photo
+        width: 55%
+        box-shadow: $box-shadow
+        border-radius: .5rem
+        // чтобы позиционировать обьект относительно материнского обьектам задают Position: absolute, а материнскому relative, иначе будет позицтионироваться от body
+        position: absolute
+        transition: all .3s
+        // отступ для рамки в hover
+        outline-offset: 1rem
+        &_n1
+            z-index: 0
+            top: 0
+            left: 2rem
+        &_n2
+            z-index: 1
+            top: 10.5rem
+            left: 29rem
+        &_n3
+            z-index: 2
+            top: 20rem
+            left: 4rem
+            // Обьекты на которые мы наводим увеличиваются в размере и распологаются над другими обьектами
+        &:hover
+            transform: scale(1.1)
+            z-index: 4
+            // создаем рамку вокруг наведенного обьекта
+            outline: 0.5rem solid $color-brown-light
+    // Код ниже означает, что обьекты, на которые мы не навели мышкой, должны уменьшится в размере
+    &:hover &__photo:not(:hover)
+        transform: scale(.95)

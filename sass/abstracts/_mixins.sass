@@ -1,0 +1,12 @@
+@mixin AD
+    animation-duration: 4s
+    animation-delay: 1s
+
+@mixin style-link($color)
+    color: $color
+
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both
