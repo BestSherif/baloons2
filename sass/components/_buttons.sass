@@ -17,7 +17,7 @@
         background: White
         width: 100%
         height: 100%
-        border-radius: 5rem
+        border-radius: 50rem
         position: absolute
         top: 0
         left: 0
@@ -30,8 +30,19 @@
         // animation-delay: 1s
         animation-fill-mode: backwards
 
+    &__reserve-tour
+        margin-top: 3rem
+        border-radius: 50rem
+        overflow: hidden
+        &, &:link, &:visited
+            background: $color-brown-dark
+            color: $color-brown-dark
+            border-radius: 50rem
+            &:active
+                background: $color-brown-dark
+
 .btn-text
-    &:link, &:visited
+    &, &:link, &:visited
         font-size: $font-size-paragraph
         letter-spacing: .2rem
         font-weight: 700
@@ -41,6 +52,7 @@
         border-bottom: 1px $color-brown-dark solid
         display: inline-block
         transition: .5 all
+        border: 0
 
     &:hover
         background-color: $color-brown-light
