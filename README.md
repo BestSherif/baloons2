@@ -1,2 +1,1 @@
-# Test
-GitHub
+Project under development
