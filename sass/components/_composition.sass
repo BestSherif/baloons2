@@ -17,10 +17,23 @@
             z-index: 1
             top: 10.5rem
             left: 29rem
+            @include respond(tab-land)
+                top: 6.5rem
+                left: 14rem
+            @include respond(tab-port)
+                top: 6.5rem
+                left: 26rem
         &_n3
             z-index: 2
             top: 20rem
             left: 4rem
+            @include respond(tab-land)
+                top: 12rem
+                left: 4rem
+            @include respond(tab-port)
+                top: 16rem
+                left: 12rem
+
             // Обьекты на которые мы наводим увеличиваются в размере и распологаются над другими обьектами
         &:hover
             transform: scale(1.1)

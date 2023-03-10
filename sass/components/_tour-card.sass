@@ -4,6 +4,8 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+    @include respond(tab-port)
+        height: 43rem
     &__side
         position: absolute
         height: 50rem
@@ -16,8 +18,10 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
+        @include respond(tab-port)
+            height: 42rem
         &_front
-            
+
         &_back
             background: green
             transform: rotateY(180deg)
@@ -36,6 +40,8 @@
             background: $color-brown-light url(../img/card-1.jpg) center / cover no-repeat
         &_2
             background: $color-brown-light url(../img/card-2.jpg) center / cover no-repeat
+            @include respond(tab-port)
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%)
         &_3
             background: $color-brown-light url(../img/card-3.jpg) center / cover no-repeat
     &__title
@@ -56,6 +62,8 @@
             top: 3.2rem
             right: 0rem
             padding-bottom: 1rem
+        @include respond(tab-land)
+            font-size: 2.9rem
     &__descr
         ul
             list-style: none
@@ -70,6 +78,8 @@
                 display: inline-block
                 &:not(:last-child)
                     margin-bottom: 2rem
+                @include respond(tab-land)
+                    font-size: 1.6rem
     &__backSide-box
         position: absolute
         top: 50%

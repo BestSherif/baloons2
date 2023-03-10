@@ -1,15 +1,31 @@
 .footer
     padding: 8rem
     background: #333333
+    @include respond(tab-port)
+        position: relative
+
+    @include respond(tab-land)
+        position: relative
     &__logo
-        width: 12rem
+        width: 8rem
+        @include respond(tab-port)
+
     &__list
         list-style: none
         text-align: center
+        @include respond(tab-land)
+            position: absolute
+            left: 1rem
+            top: 21rem
     &__item
         display: inline-block
         &:not(:last-child)
             margin-right: 5rem
+        @include respond(tab-land)
+            &:not(:last-child)
+                margin-right: 1rem
+                margin-bottom: 1rem
+
     &__link
         &:link, &:visited
             color: $color-gray

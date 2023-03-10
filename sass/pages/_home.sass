@@ -1,6 +1,12 @@
 .section-about
     padding-top: 8rem
     padding-bottom: 14rem
+    @include respond(tab-land)
+        padding-bottom: 12rem
+    @include respond(tab-port)
+        padding-top: 2rem
+    @include respond(tab-port)
+        margin-bottom: 20rem
 
 .section-advantages
     padding: 21rem 0
@@ -10,9 +16,17 @@
     // Для всех потомков категории section-advantages применить следующие правила
     & > *
         transform: skewY(-7deg)
+    @include respond(tab-land)
+        padding: 12rem 0
+    @include respond(tab-port)
+        padding: 6rem 0 1rem 0
 
 .section-tour
     padding: 21rem 0
+    @include respond(tab-port)
+        padding: 10rem 0
+    @include respond(tab-port)
+        padding: 5rem 0
 
 .section-feedback
     position: relative
@@ -21,4 +35,3 @@
 .section-book
     padding: 10rem
     background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
-

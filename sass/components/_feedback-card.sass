@@ -10,6 +10,9 @@
     z-index: 3
     & > *
         transform: skewX(15deg)
+    @include respond(tab-port)
+        padding: 2rem
+        margin-bottom: 2rem
     &__img
         width: 15rem
         height: 15rem

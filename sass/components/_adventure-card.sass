@@ -5,6 +5,8 @@
     border-radius: .5rem
     box-shadow: $box-shadow
     transition: .3s all
+    @include respond(tab-land)
+        padding: 1.5rem
     &:hover
         transform: translateY(-1.5rem) scale(1.03)
     &_icon
