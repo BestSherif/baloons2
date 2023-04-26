@@ -1,1 +1,1 @@
-Project finish. HTML, SASS, БЭМ
+Project finish. HTML, SASS, BEM
