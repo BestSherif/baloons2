@@ -1,1 +1,1 @@
-Project under development
+Project finish. HTML, SASS, БЭМ
